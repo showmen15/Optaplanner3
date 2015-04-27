@@ -324,7 +324,11 @@ public class SolverAndPersistenceFrame extends JFrame {
                 
                 Score sc = bestSolution.getScore();
                 
+                System.out.print("HEJ HEJ Sciezka111: ");
+                System.out.flush();
+                
                 System.out.print("HEJ HEJ Sciezka: " + PathFileName);
+                System.out.flush();
                 
                 saveToFileBestScore(PathFileName,sc.toString());
             } catch (InterruptedException e) {
