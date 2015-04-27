@@ -358,7 +358,7 @@ public class SolverAndPersistenceFrame extends JFrame {
         	
         	File file = new File(sPath);
         	String dirPath = file.getAbsoluteFile().getParentFile().getAbsolutePath();	
-        	String resultFile =  dirPath + "\\result.csv";
+        	String resultFile =  dirPath + "//result.csv";
         	
         	File fileResult = new File(resultFile);
         	
