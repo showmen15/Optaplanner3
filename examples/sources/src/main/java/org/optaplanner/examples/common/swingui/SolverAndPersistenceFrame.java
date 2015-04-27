@@ -324,6 +324,8 @@ public class SolverAndPersistenceFrame extends JFrame {
                 
                 Score sc = bestSolution.getScore();
                 
+                System.out.print("HEJ HEJ Sciezka: " + PathFileName);
+                
                 saveToFileBestScore(PathFileName,sc.toString());
             } catch (InterruptedException e) {
                 throw new IllegalStateException("Solving interrupted.", e);
