@@ -55,8 +55,8 @@ Integer>(vehicleList.size());
             Customer c = vehicle.getNextCustomer();
             while (c != null)
             {
-                cost += c.getLocation().getDistance(l) * 100; //  <- tu mnożnik kosztu przejechania dystansu
-                cost += c.getDemand() * 1000 * 100;// <- tu mnożnik kosztu przeszukania pomieszczenia
+                cost += c.getLocation().getDistance(l); //  <- tu mnożnik kosztu przejechania dystansu
+                cost += c.getDemand() * 1000; // <- tu mnożnik kosztu przeszukania pomieszczenia
                 l = c.getLocation();
                 c = c.getNextCustomer();
 
